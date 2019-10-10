@@ -13,18 +13,9 @@
             <span>Economia</span>
           </div>
 
-          <p>Desavenças por causa do consumo e tráfico de 
-              drogas provocaram o assassinato do jovem 
-              Antonio Israel Ferreira do Nascimento, 18 anos, 
-              nesse domingo, 11, na Rua Helena Gonzaga, em 
-              Exu-PE.Desavenças por causa do consumo e 
-              tráfico de drogas provocaram o assassinato do 
-              jovem Antonio Israel Ferreira do Nascimento, 18 
-              anos, nesse domingo, 11, na Rua Helena 
-              Gonzaga, em Exu-PE.Desavenças por causa do 
-              consumo e tráfico de drogas provocaram o 
-              assassinato do jovem Antonio Israel Ferreira do 
-              Nascimento, 18 anos.</p>
+          <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+          <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+          <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
 
               <h6>Galeria</h6>
               <div class="owl-carousel galeria" id="">
@@ -61,32 +52,20 @@
                   </div>
               </div>
 
-              <p>
-                  Desavenças por causa do consumo e tráfico de 
-                  drogas provocaram o assassinato do jovem 
-                  Antonio Israel Ferreira do Nascimento, 18 anos, 
-                  nesse domingo, 11, na Rua Helena Gonzaga, em 
-                  Exu-PE.Desavenças por causa do consumo e 
-                  tráfico de drogas provocaram o assassinato do 
-                  jovem Antonio Israel Ferreira do Nascimento, 18 
-                  anos, nesse domingo.
-              </p>
+              <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+              <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+              <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
 
               <p class="citacao">
                   Culpa qui officia deserunt.sint occaecat cupidatat non proident, sunt in culpa qui 
                   <span>- Fulaninho da silva, 26 anos</span>
               </p>
 
-              <p>
-                  Desavenças por causa do consumo e tráfico de 
-                  drogas provocaram o assassinato do jovem 
-                  Antonio Israel Ferreira do Nascimento, 18 anos, 
-                  nesse domingo, 11, na Rua Helena Gonzaga, em 
-                  Exu-PE.Desavenças por causa do consumo e 
-                  tráfico de drogas provocaram o assassinato do 
-                  jovem Antonio Israel Ferreira do Nascimento, 18 
-                  anos, nesse domingo.
-              </p>
+              <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+              <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+              <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
+
+              <span id="fonte">Fonte: Blog Alvinho Patriota</span>
 
               <div class="share">
                 <h4>Compartilhe</h4>
