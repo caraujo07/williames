@@ -64,14 +64,25 @@
 
         <div id="tags">
           <div class="badges">
-            <h2>Tags</h2>
+          
+          <h2>Tags</h2>
+<ul>
+    <?php
+    $tags = get_tags();
+    if ( $tags ) :
+        foreach ( $tags as $tag ) : ?>
+            <li><a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" title="<?php echo esc_attr( $tag->name ); ?>"><?php echo esc_html( $tag->name ); ?></a></li>
+        <?php endforeach; ?>
+    <?php endif; ?>
+</ul>
+            <!-- <h2>Tags</h2>
             <span class="badge">brasil</span>
             <span class="badge">economia</span>
             <span class="badge">nacional</span>
             <span class="badge">política</span>
             <span class="badge">nacional</span>
             <span class="badge">brasil</span>
-            <span class="badge">economia</span>
+            <span class="badge">economia</span> -->
           </div>
         </div>
 
