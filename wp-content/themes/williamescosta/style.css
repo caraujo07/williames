@@ -321,6 +321,10 @@ body {
   align-items: center;
 }
 
+.card-link span {
+  color: #19647e;
+}
+
 #post .card .card-link:hover span:last-child {
   margin-left: 3px;
   -webkit-transition: all 100ms linear;
@@ -375,7 +379,7 @@ body {
   margin-top: 40px;
 }
 
-#anuncio img {
+#anuncio .box-widget {
   background: #f8f8f8;
   padding: 20px;
 }
@@ -486,6 +490,12 @@ body {
 #tags .badges {
   border: 1px solid #ccc;
   padding: 20px;
+}
+
+#tags .badges ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 #tags .badges h2 {
@@ -1493,6 +1503,7 @@ footer .footer-info .end .info p {
   #busca .result .card .card-body {
     width: 50%;
     position: relative;
+    padding: 20px 10px;
   }
   #busca .result .card .card-body .card-title {
     display: block;
@@ -1519,7 +1530,7 @@ footer .footer-info .end .info p {
   }
   #busca .result .card .card-body .tg {
     position: absolute;
-    top: 0;
+    top: 3px;
     display: block;
   }
   #busca .result .card .card-body .tg span {

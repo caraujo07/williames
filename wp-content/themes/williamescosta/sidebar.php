@@ -12,7 +12,13 @@
           </div>
         </div>
         <div id="anuncio">
-          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clima.jpg" alt="">
+        <div class="box-widget">
+      <a href="https://www.accuweather.com/pt/br/parnamirim/40329/weather-forecast/40329" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1509924419437" class="aw-widget-current"  data-locationkey="40329" data-unit="c" data-language="pt-br" data-useip="false" data-uid="awcc1509924419437"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+</div>
         </div>
         <div id="populares">
           <div class="populares">
@@ -71,7 +77,7 @@
     $tags = get_tags();
     if ( $tags ) :
         foreach ( $tags as $tag ) : ?>
-            <li><a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" title="<?php echo esc_attr( $tag->name ); ?>"><?php echo esc_html( $tag->name ); ?></a></li>
+            <li><a class="badge" href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" title="<?php echo esc_attr( $tag->name ); ?>"><?php echo esc_html( $tag->name ); ?></a></li>
         <?php endforeach; ?>
     <?php endif; ?>
 </ul>
@@ -93,14 +99,30 @@
         <div id="facebook">
           <div class="facebook">
             <h2>Facebook</h2>
-            <img class="img-fluid"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/fbembed.jpg" alt="">
+            <div class="box-widget" style="text-align:center;">
+			
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+				</script>
+				<div class="fb-like-box" data-href="https://www.facebook.com/BlogWillamesCosta" data-width="292" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+			</div>		 
           </div>
         </div>
 
         <div id="instagram">
           <div class="ig">
             <h2>Instagram</h2>
-            <img class="img-fluid"src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ig.jpg" alt="">
+            <div class="box-widget">
+          
+		 <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/239a213f055c5b54b43686e973e57ea1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+			</div>
           </div>
         </div>
       </section>
