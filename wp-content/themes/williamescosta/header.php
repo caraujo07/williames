@@ -22,7 +22,6 @@
 <body>
 
   <header>
-  
       <nav id="desktop-nav">
         <div class="logo">
           <a href="home">
@@ -30,9 +29,10 @@
           </a>
         </div>
         <div class="nav">
+        <?php // wp_nav_menu( array( 'theme_location' => 'menu-topo' ) ); ?>
             <ul>
-            <?php wp_nav_menu( array( 'theme_location' => 'menu-topo' ) ); ?>
-              <!-- <li class="nav-item">
+           
+              <li class="nav-item">
                 <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
@@ -117,7 +117,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contato" title="Contato">Contato</a>
-              </li> -->
+              </li>
             </ul>
           <form action="<?php echo get_home_url(); ?>/?s=" class="form-inline my-2 my-lg-0">
             <div>

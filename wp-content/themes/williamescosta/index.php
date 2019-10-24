@@ -91,7 +91,35 @@
       <div class="col-12 col-md-8">
         <div id="post">
           
-          <div class="card">
+        <?php if (have_posts()) : ?>
+              <?php while (have_posts()) : the_post(); ?>    
+               <div class="card">
+                  <img class="card-img-top"
+                       src="<?php the_post_thumbnail_url(); ?>"
+                       alt="Imagem de capa do card">
+                  <div class="bdg card-body">
+                    <span class="badge">
+                      <?php
+                        if(get_the_tag_list()) {
+                          echo get_the_tag_list('','</span><span class="badge">','');
+                        }
+                      ?>
+                    </span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                    <p class="card-text"><?php the_content(); ?></p>
+                  </div>
+                  <div class="card-body pt-0">
+                    <a href="<?php the_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
+                  </div>
+                </div>
+              <?php endwhile; ?>
+        <?php endif; ?>
+
+
+
+          <!-- <div class="card">
             <img class="card-img-top"
               src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card1.jpg"
               alt="Imagem de capa do card">
@@ -201,7 +229,7 @@
             <div class="card-body pt-0">
               <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
             </div>
-          </div>
+          </div> -->
           <button>Mais matérias</button>
         </div>
       </div>

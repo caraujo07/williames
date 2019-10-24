@@ -335,9 +335,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
-#post .card .bdg .badge {
+#post .card .bdg .badge a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,11 +352,15 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 95px;
+  width: 110px;
   height: 28px;
   font-size: 15px;
   border-radius: 0px;
-  margin: 5px 5px;
+}
+
+#post .card .bdg .badge a:hover {
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 #post button {
@@ -793,6 +798,14 @@ footer .footer-info .end .info span {
 
 footer .footer-info .end .info p {
   text-align: left;
+}
+
+footer .btn:hover {
+  opacity: 0.9;
+}
+
+footer .btn:focus {
+  box-shadow: none;
 }
 
 #desktop-nav {
@@ -1327,6 +1340,15 @@ footer .footer-info .end .info p {
   transition: all 0.3s ease;
 }
 
+#post .card .card-title a {
+  color: #333;
+}
+
+#post .card .card-title a:hover {
+  text-decoration: none;
+  color: #4ea5d9;
+}
+
 @media (max-width: 385px) {
   .navbar-toggler span:first-child {
     display: none;
@@ -1343,6 +1365,7 @@ footer .footer-info .end .info p {
   #post .card .card-title {
     font-size: 24px;
   }
+
   #destaques {
     display: block;
   }
@@ -1580,7 +1603,7 @@ footer .footer-info .end .info p {
     margin-left: 0;
   }
   .card-body {
-    padding-left: 0;
+    padding-left: 10px;
   }
 
   #interna article p.citacao::before {

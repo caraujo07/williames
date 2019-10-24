@@ -48,7 +48,7 @@
             <input type="text" name="nome" placeholder="Nome">
             <input type="email" name="email" placeholder="E-mail">
             <textarea name="msg" id="msg" placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
+            <button class="btn" type="submit">Enviar</button>
           </form>
         </div>
       </div>

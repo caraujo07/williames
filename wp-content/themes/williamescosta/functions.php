@@ -1,4 +1,6 @@
 <?php 
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 360, 200);
 
 function register_menu_topo() {
   register_nav_menu('menu-topo',__( 'Menu do Topo' ));
