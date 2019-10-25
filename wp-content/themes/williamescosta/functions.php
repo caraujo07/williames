@@ -1,4 +1,7 @@
 <?php 
+
+require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 360, 200);
 

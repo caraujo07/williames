@@ -90,6 +90,8 @@
     <div class="row">
       <div class="col-12 col-md-8">
         <div id="post">
+
+        
           
           <div class="card">
             <img class="card-img-top"
