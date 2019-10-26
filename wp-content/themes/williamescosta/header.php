@@ -57,16 +57,14 @@
    </div>
    
    </nav>
-
-
-
-
-
-
     
   </header>
 
+
+
+
   <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0" id="mobile-nav">
+  
       <a class="navbar-brand pl-3" href="index.php"><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-mobile.png"
           alt="Blog Williames Costa"></a>
       <button class="navbar-toggler pr-3" type="button" onclick="slideToggle()">
@@ -89,27 +87,21 @@
             <button type="submit"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/search.svg" alt=""></button>
           </div>
         </form>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Editorias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cidades</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Seu Estado</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servico">Serviço</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contato">Contato</a>
-          </li>
-        </ul>
 
+        <?php
+          wp_nav_menu( array(
+            'theme_location' => 'menu-topo',
+            'depth' => 2,
+            'container' => 'div',
+            'container_class' => 'navbar-collapse',
+            'container_id' => 'bs-example-navbar-collapse-1',
+            'menu_class' => 'nav navbar-nav',
+            'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+            'walker' => new WP_Bootstrap_Navwalker())
+          );
+        ?>
+
+        
         <div class="social">
           <h5>Nossas redes sociais</h5>
           <ul>
