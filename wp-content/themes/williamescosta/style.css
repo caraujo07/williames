@@ -384,9 +384,9 @@ body {
   margin-top: 40px;
 }
 
-#anuncio .box-widget {
+#anuncio .box-widget, #anuncio img {
   background: #f8f8f8;
-  padding: 20px;
+  padding: 25px;
 }
 
 #populares {
@@ -500,6 +500,7 @@ body {
 #tags .badges ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -818,6 +819,10 @@ footer .btn:focus {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .navbar-expand-lg .navbar-toggler {
@@ -1394,6 +1399,9 @@ footer .btn:focus {
   #busca .result p {
     font-size: 30px;
     text-align: center;
+  }
+  ul.dropdown-menu.show li a {
+    padding: 15px!important;
   }
 }
 

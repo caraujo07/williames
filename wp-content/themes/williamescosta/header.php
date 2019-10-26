@@ -24,7 +24,7 @@
 
   
         <div class="logo">
-          <a href="home">
+          <a href="index.php">
             <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo.png" alt="">
           </a>
         </div>
@@ -67,7 +67,7 @@
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-dark pl-0 pr-0" id="mobile-nav">
-      <a class="navbar-brand pl-3" href="home"><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-mobile.png"
+      <a class="navbar-brand pl-3" href="index.php"><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/logo-mobile.png"
           alt="Blog Williames Costa"></a>
       <button class="navbar-toggler pr-3" type="button" onclick="slideToggle()">
         <div>
@@ -91,7 +91,7 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Editorias</a>

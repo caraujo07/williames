@@ -14,13 +14,8 @@
             </div>
             <div class="card-body">
               <div class="tg">
-                <span>
-                  <?php
-                    if(get_the_tag_list()) {
-                      echo get_the_tag_list('','</span><span>','');
-                    }
-                  ?>
-                </span>
+                <span>Política</span>
+                <span>Economia</span>
               </div>
               <a class="card-title" href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
               <a href="<?php the_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
