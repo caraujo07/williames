@@ -1,10 +1,14 @@
 function slideToggle() {
   let slider = document.getElementById('navbarSupportedContent');
+  let main = document.getElementById('main');
+  let ft = document.getElementById('footer');
 
   if(slider.style.left == '0px') {
     slider.style.left = '-1100px';
   }else {
     slider.style.left = '0px';
+    main.style.display = 'none';
+    ft.style.display = 'none';
   }
 }   
 
