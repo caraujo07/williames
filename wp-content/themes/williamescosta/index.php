@@ -1,16 +1,57 @@
 <?php get_header(); ?>
+
+
+
     <section id="destaques">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
             <div class="destaques">
               <div class="destaque">
-                <a href="#">
-                  <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/destaque1.jpg" alt="">
-                  <div class="caption principal">
-                    <h2>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h2>
-                  </div>
-                </a>
+             
+
+
+                
+                <div class="owl-carousel slide-destaques owl-theme">
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-block d-md-block">
+                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
+                    </div></div>
+              </div>
+ 
+  
               </div>
             </div>
           </div>
@@ -41,49 +82,7 @@
     </section>
 
 
-    <div class="bd-example d-md-none">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-              <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-              <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-              <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-              <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-block d-md-block">
-              <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
   <main id="main" class="container">

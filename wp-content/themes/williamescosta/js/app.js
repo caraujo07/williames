@@ -25,8 +25,19 @@ $(document).ready(function(){
     }
   });
 
+  $(".owl-carousel.slide-destaques").owlCarousel({
+    items: 1,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    loop: true,
+  });
+
   $(".owl-carousel").owlCarousel({
     items: 1,
-    autoplay: true
+    autoplay: true,
   });
+
+
+
 });
