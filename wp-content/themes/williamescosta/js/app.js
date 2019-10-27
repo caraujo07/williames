@@ -5,6 +5,8 @@ function slideToggle() {
 
   if(slider.style.left == '0px') {
     slider.style.left = '-1100px';
+    main.style.display = 'block';
+    ft.style.display = 'block';
   }else {
     slider.style.left = '0px';
     main.style.display = 'none';
@@ -33,6 +35,21 @@ $(document).ready(function(){
     items: 1,
     autoplay: true,
     nav: false,
+    dots: false,
+    loop: true,
+  });
+  $(".owl-carousel.slide-mobile-destaques").owlCarousel({
+    items: 1,
+    autoplay: true,
+    center: true,
+    nav: false,
+    dots: true,
+    loop: true,
+  });
+  $(".carouselExampleCaptions").owlCarousel({
+    items: 1,
+    autoplay: true,
+    nav: true,
     dots: false,
     loop: true,
   });

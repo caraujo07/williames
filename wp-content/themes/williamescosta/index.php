@@ -7,58 +7,87 @@
         <div class="row">
           <div class="col-md-8">
             <div class="destaques">
-              <div class="destaque">
-             
-
-
-                
+              <div class="destaque slider">                
                 <div class="owl-carousel slide-destaques owl-theme">
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-                  <div class="item"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/foto.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-block d-md-block">
-                      <h4>Pirenópolis ganha mais uma Reserva Particular do Patrimônio Natural</h4>
-                    </div></div>
-              </div>
+                  <?php
+                    $args = array( 'cat' => 'brasil', 'posts_per_page' => 3 );
+
+                    // The Query
+                    $the_query = new WP_Query( $args );
  
+                    // The Loop
+                    $cont = 0;
+                    if ( $the_query->have_posts() ) {
+                      while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                    
+                          if($cont == 0){
+                            echo '<div class="item active">';
+                          }else{
+                            echo '<div class="item">';
+                          }
+ 
+                        /* grab the url for the full size featured image */
+                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'imagem-carrossel'); 
   
+                          echo '<a href="' . get_the_permalink() . '">';
+                          echo '<img class="d-block" src="'.$featured_img_url.'" alt="">';
+                          echo '<div class="carousel-caption d-block d-md-block"><h4>' . get_the_title() . '</h4></div>';
+                          echo '</a>';
+                          echo '</div>';
+                          $cont++;
+                      }
+                        /* Restore original Post Data */
+                        wp_reset_postdata();
+                      } else {
+                      // no posts found
+                    }
+ 
+                  ?>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 d-lg-flex pl-0">
             <div class="destaques">
-              <div class="destaque">
+
+
+            <?php
+                    $args = array( 'cat' => 'brasil', 'posts_per_page' => 2 );
+
+                    // The Query
+                    $the_query = new WP_Query( $args );
+ 
+                    // The Loop
+                    $cont = 0;
+                    if ( $the_query->have_posts() ) {
+                      while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                    
+                          echo '<div class="destaque">';
+ 
+                        /* grab the url for the full size featured image */
+                        $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'imagem-carrossel'); 
+  
+                          echo '<a href="' . get_the_permalink() . '">';
+                          echo '<img class="img-destaque" src="'.$featured_img_url.'" alt="">';
+                          echo '<div class="caption"><h2>' . get_the_title() . '</h2></div>';
+                          echo '</a>';
+                          echo '</div>';
+                          $cont++;
+                      }
+                        /* Restore original Post Data */
+                        wp_reset_postdata();
+                      } else {
+                      // no posts found
+                    }
+ 
+                  ?>
+
+
+
+              <!-- <div class="destaque">
                 <a href="#">
                   <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/destaque2.jpg" alt="">
                   <div class="caption">
@@ -74,14 +103,51 @@
                     <h2>Maia e Toffoli defendem reforma que r</h2>
                   </div>
                 </a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="bd-example d-md-none">
+      <div class="owl-carousel slide-mobile-destaques owl-theme">
+        <?php
+          $args = array( 'cat' => 'brasil', 'posts_per_page' => 3 );
 
+          // The Query
+          $the_query = new WP_Query( $args );
+
+          // The Loop
+          $cont = 0;
+          if ( $the_query->have_posts() ) {
+            while ( $the_query->have_posts() ) {
+              $the_query->the_post();
+          
+                if($cont == 0){
+                  echo '<div class="item active">';
+                }else{
+                  echo '<div class="item">';
+                }
+
+              /* grab the url for the full size featured image */
+              $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'imagem-carrossel'); 
+
+                echo '<a href="' . get_the_permalink() . '">';
+                echo '<img class="d-block" src="'.$featured_img_url.'" alt="">';
+                echo '<div class="carousel-caption d-block d-md-block"><h4>' . get_the_title() . '</h4></div>';
+                echo '</a>';
+                echo '</div>';
+                $cont++;
+            }
+              /* Restore original Post Data */
+              wp_reset_postdata();
+            } else {
+            // no posts found
+          }
+        ?>            
+      </div>
+    </div>
     
 
 
