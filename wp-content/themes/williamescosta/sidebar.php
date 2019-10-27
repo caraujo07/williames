@@ -24,16 +24,45 @@
     <div class="populares">
       <h2 class="mb-0"><span>Posts</span> populares</h2>
 
-      <div class="card">
-        <div class="card-image">
-          <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card4.jpg" alt="Imagem de capa do card" />
-          <span>Política</span>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo drogas</h5>
-        </div>
-      </div>
+  
 
+    <?php $pc = new WP_Query('posts_per_page=5&cat=pernambuco'); ?>
+      <?php while ($pc->have_posts()) : $pc->the_post(); ?>
+        <a href="<?php echo post_permalink(); ?>"  title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+          <div class="card">
+            <div class="card-image">
+              <?php
+                if (get_the_post_thumbnail()) {
+                    the_post_thumbnail('imagem-chamada', array('class' => 'img-fluid'));
+                    }
+              ?>  
+              
+                <?php $post_tags = get_the_tags();
+                  if ( $post_tags ) { ?>
+                  <span>
+                    <?php
+                      echo $post_tags[0]->name; 
+                  } else {
+                    echo null;
+                  }
+                ?>
+              </span>
+            </div> 
+            <div class="card-body">
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo drogas</h5>
+            </div>
+          </div>
+        </a>
+              <?php endwhile; ?>
+          
+
+      
+        
+          
+        
+        
+     
+<!--
       <div class="card">
         <div class="card-image">
           <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card4.jpg" alt="Imagem de capa do card" />
@@ -61,7 +90,7 @@
         <div class="card-body">
           <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo drogas</h5>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
