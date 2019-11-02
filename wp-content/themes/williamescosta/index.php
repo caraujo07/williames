@@ -173,7 +173,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                    <p class="card-text"><?php the_content(); ?></p>
+                    <p class="card-text"><?php the_content(); ?>[...]</p>
                   </div>
                   <div class="card-body pt-0">
                     <a href="<?php the_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>

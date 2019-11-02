@@ -1035,6 +1035,13 @@ footer .btn:focus {
   font-weight: bold;
 }
 
+.result h4 {
+  font-size: 24px;
+  color: #19647e;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 #busca .result p,
 #interna .result p {
   padding: 0 15px;
@@ -1073,6 +1080,8 @@ footer .btn:focus {
   text-transform: uppercase;
   padding: 5px 15px;
   font-size: 15px;
+  min-width: 120px;
+  text-align: center;
 }
 
 #busca .result .card .card-image .card-img-top,
@@ -1116,6 +1125,10 @@ footer .btn:focus {
 #busca .result .card .card-body .tg,
 #interna .result .card .card-body .tg {
   display: none;
+}
+
+#interna .medias li {
+  cursor: pointer;
 }
 
 #interna .medias svg {
@@ -1261,6 +1274,29 @@ footer .btn:focus {
   border: none;
 }
 
+#interna .result .card .card-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#interna .result .card .card-title:hover {
+  color: #4ea5d9;
+  text-decoration: none;
+}
+
+#interna .result .tg {
+margin-bottom: 20px;
+}
+
+#interna .result .tg span {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  background: #4ea5d9;
+  padding: 4px 20px;
+}
+
 #interna article {
   margin: 20px auto;
 }
@@ -1307,29 +1343,34 @@ footer .btn:focus {
   margin: 30px 15px;
 }
 
-#interna article p.citacao {
+#interna article blockquote {
   margin: 0;
-  padding: 25px 30px 25px 90px;
+  padding: 10px 30px 30px 115px;
   background: #4ea5d9;
   color: #fff;
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   position: relative;
   font-weight: 500;
+  display: block;
 }
 
-#interna article p.citacao::before {
+#interna article blockquote p {
+  margin-bottom: 5px!important;
+}
+
+#interna article blockquote::before {
   content: "";
   display: block;
   position: absolute;
-  width: 100%;
+  width: 50px;
   height: 27px;
   background: url("assets/quotes.svg") no-repeat;
-  left: 10%;
-  top: 10%;
+  left: 8%;
+  top: 22%;
 }
 
-#interna article p.citacao span {
+#interna article cite {
   font-weight: lighter;
 }
 
@@ -1359,7 +1400,7 @@ footer .btn:focus {
 }
 
 #interna article .share ul li {
-  margin: 5px 15px;
+  margin: 5px 10px;
   height: 40px;
   width: 40px;
   border: 1px solid #19647e;
@@ -1672,6 +1713,21 @@ footer .btn:focus {
 
   #interna article p.citacao::before {
     left: 5%;
+  }
+  #interna .result .card {
+    flex-direction: row;
+  }
+
+  #interna .result .card .card-image {
+    min-width: 375px;
+    max-width: 375px;
+  }
+
+  #interna .result .card .card-body {
+    padding-top: 0;
+  }
+  #interna .result .card .card-body .tg {
+    display: flex;
   }
 }
 

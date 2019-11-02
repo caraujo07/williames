@@ -1,32 +1,21 @@
 <?php get_header(); ?>
 
-  <main id="main" class="container">
+  <main class="container">
     <div class="row">
       <section id="interna" class="col-12 col-md-8 p-0">
 
         <article>
-          <h3><?php the_title(); ?></h3>
+          <h3>Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo drogas</h3>
 
-          <img class="card-img-top img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
-          
+          <img class="card-img-top img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card1.jpg" alt="">
           <div class="tg">
-            <span>
-              <?php
-                if(get_the_tag_list()) {
-                  echo get_the_tag_list('','</span><span>','');
-                }
-              ?>
-            </span>
+            <span>Política</span>
+            <span>Economia</span>
           </div>
-          <?php 
-            if ( have_posts() ) {
-              while ( have_posts() ) {
-                the_post(); 
-                echo get_the_content();
-              } // end while
-            } // end if
-          ?>
 
+          <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+          <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+          <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
 
               <h6>Galeria</h6>
               <div class="owl-carousel galeria" id="">
@@ -63,6 +52,21 @@
                   </div>
               </div>
 
+              <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+              <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+              <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
+
+              <p class="citacao">
+                  Culpa qui officia deserunt.sint occaecat cupidatat non proident, sunt in culpa qui 
+                  <span>- Fulaninho da silva, 26 anos</span>
+              </p>
+
+              <p>Desavenças por causa do consumo e tráfico de drogas provocaram o assassinato do jovem Antonio Israel Ferreira do Nascimento, 18 anos, nesse domingo, 11, na Rua Helena Gonzaga, em Exu-PE. Segundo a Polícia Militar, ele foi atingido por golpes de faca no tórax, cabeça e rosto por volta das 3h da madrugada.</p>
+              <p>Dois rapazes, de 22 e 23 anos, são tratados como principais suspeitos até o momento. Uma tia da vítima e a namorada de um dos supostos autores do crime já foram ouvidas pela Polícia Civil no inquérito que investiga o homicídio.</p>
+              <p>Até o momento as investigações apontam que as drogas motivaram o crime. As investigações seguem na Delegacia de Polícia Civil de Exu.</p>
+
+              <span id="fonte">Fonte: Blog Alvinho Patriota</span>
+
               <div class="share">
                 <h4>Compartilhe</h4>
                 <div class="medias">
@@ -94,88 +98,9 @@
         </article>
 
 
-
         <div class="result">
-          <h4>Leia mais</h4>
 
-          <?php 
-
-          $related = new WP_Query(
-                  array(
-                     'category__in'   => wp_get_post_categories( $post->ID ),
-                     'posts_per_page' => 5,
-                     'post__not_in'   => array( $post->ID )
-                  )
-               );
-
-
-               if( $related->have_posts() ) { 
-                  while( $related->have_posts() ) { 
-                     $related->the_post();  ?>
-                     <div class="card">
-                     <div class="card-image">
-
-                     <a class="card-title" href="<?php echo get_post_permalink(); ?>"><img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Imagem de capa do card"></a>
-                       
-                       <?php $post_tags = get_the_tags();
-                          if ( $post_tags ) { ?>
-                          <span>
-                            <?php
-                                echo $post_tags[0]->name; 
-                              } else {
-                                echo null;
-                              }
-                            ?>
-                          </span>
-                     
-                     </div>
-                     <div class="card-body">
-                       <div class="tg">
-                         <span>
-                           <?php
-                             if(get_the_tag_list()) {
-                               echo get_the_tag_list('','</span><span>','');
-                             }
-                           ?>
-                         </span>
-                       </div>
-                       <a class="card-title" href="<?php echo get_post_permalink(); ?>"><h5><?php echo get_the_title(); ?></h5></a>
-                       <a href="<?php echo get_post_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
-                     </div>
-                   </div> 
-                   <?php
-                  }
-                  wp_reset_postdata();
-               }
-               ?>
-          
-         
-
-<!-- <span class="badge">
-                      <?php
-                        if(get_the_tag_list()) {
-                          echo get_the_tag_list('','</span><span>','');
-                        }
-                      ?>
-                    </span> -->
-
-          <!-- <div class="card">
-            <div class="card-image">
-              <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/busca.jpg" alt="Imagem de capa do card">
-              <span>Política</span>
-            </div>
-            <div class="card-body">
-               <div class="tg">
-                 <span>Política</span>
-                 <span>Economia</span>
-               </div>
-              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
-                drogas</h5>
-                <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
-            </div>
-          </div> -->
-
-          <!-- <div class="card">
+          <div class="card">
             <div class="card-image">
               <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/busca.jpg" alt="Imagem de capa do card">
               <span>Política</span>
@@ -204,13 +129,120 @@
                 drogas</h5>
                 <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
             </div>
-          </div> -->
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/busca.jpg" alt="Imagem de capa do card">
+              <span>Política</span>
+            </div>
+            <div class="card-body">
+               <div class="tg">
+                 <span>Política</span>
+                 <span>Economia</span>
+               </div>
+              <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
+                drogas</h5>
+                <a href="#" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
+            </div>
+          </div>
           
           
         </div>
       </section>
 
-     <?php get_sidebar(); ?>
+      <section class="col-12 col-md-4">
+        <div id="sobre">
+          <div class="card">
+            <h2><span>Sobre</span> o editor</h2>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/wc.jpg" class="card-img-top" alt="Willames Costa">
+            <div class="card-body">
+              <h5 class="card-title">Wíllames Costa</h5>
+              <h6 class="card-title subtitle">Editor</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div id="anuncio">
+          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clima.jpg" alt="">
+        </div>
+        <div id="populares">
+          <div class="populares">
+            <h2 class="mb-0"><span>Posts</span> populares</h2>
+            <div class="card">
+              <div class="card-image">
+                <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card4.jpg" alt="Imagem de capa do card">
+                <span>Política</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
+                  drogas</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card4.jpg" alt="Imagem de capa do card">
+                <span>Economia</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
+                  drogas</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img class="card-img-top" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/card4.jpg" alt="Imagem de capa do card">
+                <span>Brasil</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
+                  drogas</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image noimg">
+
+                <span>Brasil</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Jovem de 18 anos é assassinado a facadas em Exu-PE por causa de rixas envolvendo
+                  drogas</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tags">
+          <div class="badges">
+            <h2>Tags</h2>
+            <span class="badge">brasil</span>
+            <span class="badge">economia</span>
+            <span class="badge">nacional</span>
+            <span class="badge">política</span>
+            <span class="badge">nacional</span>
+            <span class="badge">brasil</span>
+            <span class="badge">economia</span>
+          </div>
+        </div>
+
+        <div id="anuncio">
+          <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/anuncio.jpg" alt="">
+        </div>
+
+        <div id="facebook">
+          <div class="facebook">
+            <h2>Facebook</h2>
+            <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/fbembed.jpg" alt="">
+          </div>
+        </div>
+
+        <div id="instagram">
+          <div class="ig">
+            <h2>Instagram</h2>
+            <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/ig.jpg" alt="">
+          </div>
+        </div>
+      </section>
 
     </div>
   </main>
