@@ -139,8 +139,8 @@
                            ?>
                          </span>
                        </div>
-                       <a class="card-title" href="<?php echo get_post_permalink(); ?>"><h5><?php echo get_the_title(); ?></h5></a>
-                       <a href="<?php echo get_post_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
+                       <a class="card-title" href="<?php echo the_permalink(); ?>"><h5><?php echo get_the_title(); ?></h5></a>
+                       <a href="<?php the_permalink(); ?>" class="card-link"> <span>continuar lendo</span><span><img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/arrow-right.svg" alt=""></span></a>
                      </div>
                    </div> 
                    <?php

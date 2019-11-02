@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div id="main">
 
   <main id="servico" class="container">
     <div class="row">
@@ -35,8 +36,9 @@
         </div>
       </section>
       
-    <?php get_sidebar(); ?>
-  </main>
-
+      <?php get_sidebar(); ?>
+    </main>
+  </div>
+    
 
 <?php get_footer(); ?>
