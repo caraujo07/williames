@@ -220,7 +220,6 @@ body {
   position: relative;
 }
 
-
 #destaques .destaques .destaque a:hover {
   opacity: 0.9;
   -webkit-transition: all 0.3s linear;
@@ -260,7 +259,7 @@ body {
 }
 
 .owl-dots {
-  margin-top: 2px!important;
+  margin-top: 2px !important;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -269,13 +268,13 @@ body {
 }
 
 .owl-dot.active span {
-  background: #4ea5d9!important;
-  width: 15px!important;
-  height: 15px!important;
+  background: #4ea5d9 !important;
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .owl-carousel .owl-item img {
-  width: 122%!important;
+  width: 122% !important;
 }
 
 .carousel-indicators {
@@ -421,7 +420,8 @@ body {
   margin-top: 40px;
 }
 
-#anuncio .box-widget, #anuncio img {
+#anuncio .box-widget,
+#anuncio img {
   background: #f8f8f8;
   padding: 25px;
 }
@@ -1286,7 +1286,7 @@ footer .btn:focus {
 }
 
 #interna .result .tg {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #interna .result .tg span {
@@ -1295,6 +1295,7 @@ margin-bottom: 20px;
   color: #fff;
   background: #4ea5d9;
   padding: 4px 20px;
+  margin-right: 3px;
 }
 
 #interna article {
@@ -1331,7 +1332,7 @@ margin-bottom: 20px;
 }
 
 .tg span a {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1356,7 +1357,7 @@ margin-bottom: 20px;
 }
 
 #interna article blockquote p {
-  margin-bottom: 5px!important;
+  margin-bottom: 5px !important;
 }
 
 #interna article blockquote::before {
@@ -1459,7 +1460,7 @@ margin-bottom: 20px;
     bottom: -10%;
   }
 }
- 
+
 @media (min-width: 768px) {
   #parceiros .owl-next {
     right: 0;
@@ -1501,7 +1502,7 @@ margin-bottom: 20px;
     text-align: center;
   }
   ul.dropdown-menu.show li a {
-    padding: 15px!important;
+    padding: 15px !important;
   }
 }
 
@@ -1729,7 +1730,7 @@ margin-bottom: 20px;
   #interna .result .card .card-body .card-link {
     display: flex;
   }
-  #interna .result .card .card-body .card-title h5{
+  #interna .result .card .card-body .card-title h5 {
     font-size: 28px;
     font-weight: normal;
   }
@@ -1752,7 +1753,6 @@ margin-bottom: 20px;
   .carousel-caption {
     bottom: -5%;
   }
-  
 }
 
 @media (width: 1024px) {
@@ -1761,7 +1761,7 @@ margin-bottom: 20px;
     padding: 5px 10px;
   }
   #desktop-nav .nav ul li a::after {
-    bottom: -8px!important;
+    bottom: -8px !important;
   }
   #desktop-nav .nav {
     padding: 5px 0;
